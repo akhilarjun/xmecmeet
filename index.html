@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html data-ng-app="xmec">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Coming Soon!</title>
+        <style>
+            [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+                display: none !important;
+            }
+        </style>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link href="css/xmec_style.css" rel="stylesheet">
+    </head>
+    <body data-ng-controller="xmec-ctrl">
+        <div class="backround_image"></div>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/xmeclogo.png">
+                <div class="caption">
+                    <div>XMEC MEET 2016</div>
+                </div>
+                <div class="caption helper ng-cloak">
+                    <div>See You all in</div>
+                    <div class="__timer_container"> 
+                        <span data-ng-if="dateoffset.totalDays > 0" class="__timer">
+                            {{dateoffset.totalDays}} day<span data-ng-if="dateoffset.totalDays > 1">s</span> 
+                        </span>
+                        <span data-ng-if="dateoffset.hours > 0" class="__timer">
+                            {{dateoffset.hours}} hour<span data-ng-if="dateoffset.hours > 1">s</span> 
+                        </span>
+                        <span data-ng-if="dateoffset.minutes > 0" class="__timer">
+                            {{dateoffset.minutes}} min<span data-ng-if="dateoffset.minutes > 1">s</span> 
+                        </span>
+                        <span class="__timer">
+                            {{dateoffset.seconds}} seconds
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="__footer">
+                <!-- Social Icons On its way -->
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/angular.js"></script>
+        <script src="js/coming_soon.js"></script>
+    </body>
+</html>
