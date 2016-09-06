@@ -6,11 +6,29 @@
     transition: all 350ms; /*for smooth transitions*/
 }
 
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #2f2f2f;
+  outline: 1px solid slategrey;
+}
+
 /*STYLES*/
 body{
     background: #eee;
     font-family: 'Quicksand', sans-serif;
-    overflow: hidden;
+    /*overflow: hidden;*/
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .backround_image{
@@ -19,6 +37,8 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
     background-position: 37% 0;
+    position: fixed;
+    width: 100%;
 }
 
 .container{
@@ -27,7 +47,7 @@ body{
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0,0,0,0.7);
 }
 
 .logo{
@@ -46,6 +66,7 @@ body{
     font-size: 30px;
     color: #fff;
     padding: 10px;
+    font-weight: 800;
 }
 
 .logo .caption.__sub{
@@ -59,7 +80,7 @@ body{
 }
 
 .__timer_container{
-    background: #000;
+    background: rgba(0,0,0,0.5);
     padding: 15px;
     display: inline-block;
     margin: 10px;
@@ -68,9 +89,17 @@ body{
 }
 
 .__timer{
-    color: #39c;
+    color: #fff;
     display: inline-block;
     margin: 0 5px;
+}
+
+.__timer_main{
+    font-size: 30px;
+}
+
+.second.container{
+    top: 100%;
 }
 
 .__footer{
@@ -81,6 +110,12 @@ body{
     text-align: right;
     color: #fff;
     padding: 10px;
+}
+
+.__social_icon{
+    padding: 10px;
+    color: #fff;
+    display: inline-block;
 }
 
 .logo .caption.helper.show, .logo.show{
