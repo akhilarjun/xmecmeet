@@ -30,25 +30,25 @@
                     <div>See You all in</div>
                     <div class="__timer_container"> 
                         <div data-ng-if="dateoffset.totalDays > 0" class="__timer">
-                            {{dateoffset.totalDays}}
+                            <div class="__timer_main">{{dateoffset.totalDays}}</div>
                             <div>
                                 day<span data-ng-if="dateoffset.totalDays > 1">s</span>
                             </div>
                         </div>
                         <div data-ng-if="dateoffset.hours > 0" class="__timer">
-                            {{dateoffset.hours}}
+                            <div class="__timer_main">{{dateoffset.hours}}</div>
                             <div>
                                 hour<span data-ng-if="dateoffset.hours > 1">s</span>
                             </div>
                         </div>
                         <div data-ng-if="dateoffset.minutes > 0" class="__timer">
-                            {{dateoffset.minutes}}
+                            <div class="__timer_main">{{dateoffset.minutes}}</div>
                             <div>
                                 min<span data-ng-if="dateoffset.minutes > 1">s</span>
                             </div>
                         </div>
                         <div class="__timer">
-                            {{dateoffset.seconds}}
+                            <div class="__timer_main">{{dateoffset.seconds}}</div>
                             <div>
                                 seconds
                             </div>
@@ -58,10 +58,22 @@
             </div>
             <div class="__footer">
                 <!-- Social Icons On its way -->
+                <div class="__social_icon">
+                    <a href="https://www.facebook.com/mecalumnimeet">
+                        <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="__social_icon">
+                    <a href="https://twitter.com/xmecmeet">
+                        <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
         </div>
+        <!-- div class="second container"></div -->
         <script src="js/jquery.min.js"></script>
         <script src="js/angular.js"></script>
         <script src="js/coming_soon.js"></script>
+        <script src="https://use.fontawesome.com/b6609ddfef.js"></script>
     </body>
 </html>
